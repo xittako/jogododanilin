@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danilin MeCMEC</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Se acertar ganha 100 no PIX + MASSAGINHA. PORÉEEM, SE ERRAR TERÁ QUE CUMPRIR COM A RESPOSTA CORRETA!</h1>
+    <img src="sonic de cria.jpg" alt="Sonic MECMEC">
+    <p>O que o Sonic quer comer hoje? :)</p>
+    <input type="text" id="guessInput" placeholder="Digite sua resposta">
+    <button onclick="checkGuess()">Enviar</button>
+
+    <script>
+        function checkGuess() {
+            var guess = document.getElementById("guessInput").value.toLowerCase();
+            var answer = "O doce que te mandei no instagram... tuts tuts tutsss"; // Resposta a ser adivinhada
+
+            if (guess === answer.toLowerCase()) {
+                alert("Parabéns! Você acertou!");
+            } else {
+                alert("oooh nãooo, que pena amor! A resposta correta era: " + answer);
+            }
+        }
+    </script>
+</body>
+</html>
